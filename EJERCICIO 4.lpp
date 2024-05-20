@@ -1,0 +1,20 @@
+entero p1,p2,p3,p4,pt
+inicio
+escriba "digite la nota de su primer parcial: "
+lea p1
+llamar nueva_linea
+llamar nueva_linea
+escriba "digite la nota de su segundo parcial: "
+lea p2
+llamar nueva_linea
+llamar nueva_linea
+escriba "digite la nota de su tercer parcial: "
+lea p3
+llamar nueva_linea
+llamar nueva_linea
+escriba "digite la nota de su cuarto parcial: "
+lea p4
+pt <- p1+p2+p3+p4/4
+escriba "su nota difinitiva es: ",pt
+
+fin 

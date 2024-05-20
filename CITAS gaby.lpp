@@ -1,0 +1,665 @@
+cadena [70] nombre
+real especialidad, pedi, dia, hora , medi , veri , paci
+
+INICIO 
+escriba "Bienvenido al agendamiento de citas Curitas EPS"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "Por favor digite su nombre completo para poder seguir con el agendamiento "
+lea nombre 
+llamar limpiar_pantalla
+escriba "Sr/a ", nombre," nuestra EPS cuenta con dos especialidades"
+llamar nueva_linea
+llamar nueva_linea
+
+//ESPECIALIDADES DISPONIBLES 
+escriba "Manejamos la especialidad de pediatria y de medicina general"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba " Marque 1 si desea agendar para la especialidad de pediatria"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "Marque 2 si desea agendar para la especialidad de medicina general  "
+llamar nueva_linea 
+lea especialidad 
+llamar limpiar_pantalla 
+
+SI especialidad = 1 entonces 
+escriba "Bienvenido a la especialidad de pediatria sr/a ", nombre 
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "Los pediatras disponibles en el momento son:"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "1. Alejandra Lopez"
+llamar nueva_linea 
+llamar nueva_linea
+escriba "2. Manuel Rodriguez"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba " Por favor marque el numero correspondiente con el pediatra que desea agendar "
+lea pedi
+llamar limpiar_pantalla
+si pedi = 1 entonces 
+
+// HORARIOS DISPONIBLES 
+
+escriba "Elija el dia de la semana que desea agendar con la pediatra Alejandra Lopez"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "1. LUNES"
+llamar nueva_linea 
+escriba "2. MARTES"
+llamar nueva_linea 
+escriba "3. MIERCOLES"
+llamar nueva_linea 
+escriba "4. JUEVES"
+llamar nueva_linea 
+escriba "5. VIERNES "
+llamar nueva_linea 
+escriba ""
+lea dia 
+llamar limpiar_pantalla 
+si dia = 1 entonces 
+escriba "Para el dia lunes con la pediatra Alejandra Lopez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 2 entonces 
+escriba "Para el dia Martes con la pediatra Alejandra Lopez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 3 entonces 
+escriba "Para el dia Miercoles con la pediatra Alejandra Lopez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+
+si dia = 4 entonces 
+escriba "Para el dia jueves con la pediatra Alejandra Lopez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si
+
+si dia = 5 entonces 
+escriba "Para el dia viernes con la pediatra Alejandra Lopez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+llamar nueva_linea
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+ 
+si hora =1 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si
+
+si hora =2 entonces 
+escriba "Este horario  se encuentra disponible"
+fin si
+
+si hora =3 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si
+
+si hora =4 entonces 
+escriba "Este horario se encuentra disponible"
+fin si
+
+si hora =5 entonces 
+escriba "Este horario se encuentra disponible"
+fin si 
+
+fin si 
+
+
+
+si pedi =2 entonces 
+
+// HORARIOS DISPONIBLES 
+
+escriba "Elija el dia de la semana que desea agendar con el pediatra Manuel Rodriguez"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "1. LUNES"
+llamar nueva_linea 
+escriba "2. MARTES"
+llamar nueva_linea 
+escriba "3. MIERCOLES"
+llamar nueva_linea 
+escriba "4. JUEVES"
+llamar nueva_linea 
+escriba "5. VIERNES "
+llamar nueva_linea 
+escriba ""
+lea dia
+llamar limpiar_pantalla 
+
+si dia = 1 entonces 
+escriba "Para el dia lunes con el pediatra  Manuel Rodriguez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 2 entonces 
+escriba "Para el dia Martes con el pediatra  Manuel Rodriguez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 3 entonces 
+escriba "Para el dia Miercoles con el pediatra  Manuel Rodriguez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 4 entonces 
+escriba "Para el dia jueves con el pediatra Manuel Rodriguez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si
+
+si dia = 5 entonces 
+escriba "Para el dia viernes con el pediatra  Manuel Rodriguez tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+llamar nueva_linea
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si hora=1 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si
+
+si hora =2 entonces 
+escriba "Este horario  se encuentra disponible"
+fin si
+
+si hora =3 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si
+
+si hora =4 entonces 
+escriba "Este horario se encuentra disponible"
+fin si
+
+si hora =5 entonces 
+escriba "Este horario se encuentra disponible"
+fin si 
+
+
+
+fin si 
+fin si 
+
+
+//Horarios disponibles 
+
+SI especialidad = 2 entonces 
+escriba "Bienvenido a la especialidad de Medico general sr/a ", nombre 
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "Los Medicos generales disponibles en el momento son:"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "1. Juanita lozano "
+llamar nueva_linea 
+llamar nueva_linea
+escriba "2. Andres torres"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "Por favor marque el numero correspondiente con el medico general que desea agendar"
+lea medi
+llamar limpiar_pantalla
+si medi = 1 entonces 
+escriba "Elija el dia de la semana que desea agendar con medico general juanita lozano"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "1. LUNES"
+llamar nueva_linea 
+escriba "2. MARTES"
+llamar nueva_linea 
+escriba "3. MIERCOLES"
+llamar nueva_linea 
+escriba "4. JUEVES"
+llamar nueva_linea 
+escriba "5. VIERNES "
+llamar nueva_linea 
+escriba ""
+lea dia 
+llamar limpiar_pantalla 
+si dia = 1 entonces 
+escriba "Para el dia lunes con la medica Juanita Lozano tenemos el siguiente horario disponible "
+llamar nueva_linea 
+llamar nueva_linea
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 2 entonces 
+escriba "Para el dia Martes con la  medica Juanita Lozano tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 3 entonces 
+escriba "Para el dia Miercoles con la  medica Juanita Lozano tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 4 entonces 
+escriba "Para el dia jueves con la  medica Juanita Lozano tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si
+
+si dia = 5 entonces 
+escriba "Para el dia viernes con la medica Juanita Lozano tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+llamar nueva_linea
+lea hora
+llamar nueva_linea
+llamar nueva_linea 
+fin si 
+
+si hora =1 entonces 
+escriba "Este horario  se encuentra disponible"
+fin si
+
+si hora =2 entonces 
+escriba "Este horario  se encuentra disponible"
+fin si
+
+si hora =3 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si
+
+si hora =4 entonces 
+escriba "Este horario se encuentra disponible"
+fin si
+
+si hora =5 entonces 
+escriba "Este horario se encuentra disponible"
+fin si 
+
+fin si 
+
+si medi = 2 entonces 
+
+// Horarios disponibles 
+
+escriba "Elija el dia de la semana que desea agendar con el medico Andres torres"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "1. LUNES"
+llamar nueva_linea 
+escriba "2. MARTES"
+llamar nueva_linea 
+escriba "3. MIERCOLES"
+llamar nueva_linea 
+escriba "4. JUEVES"
+llamar nueva_linea 
+escriba "5. VIERNES "
+llamar nueva_linea 
+escriba ""
+lea dia
+llamar limpiar_pantalla
+
+si dia = 1 entonces 
+escriba "Para el dia lunes con el medico Andres torres tenemos el siguiente horario disponible "
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 2 entonces 
+escriba "Para el dia Martes con el medico Andres torres tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 3 entonces 
+escriba "Para el dia Miercoles con el medico Andres torres tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si dia = 4 entonces 
+escriba "Para el dia jueves con el medico Andres torres tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si
+
+si dia = 5 entonces 
+escriba "Para el dia viernes con el medico Andres torres tenemos los siguientes horarios"
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "1. 8:00 A.M"
+llamar nueva_linea 
+escriba "2. 10:00 A.M"
+llamar nueva_linea 
+escriba "3. 12:00 P.M"
+llamar nueva_linea 
+escriba "4. 3:00 P.M"
+llamar nueva_linea 
+escriba "5. 5:00 P.M"
+llamar nueva_linea 
+escriba "Por favor elija una de las opciones anteriores para agendar su cita "
+llamar nueva_linea
+lea hora
+llamar nueva_linea
+llamar nueva_linea
+fin si 
+
+si hora = 1 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si 
+
+si hora =2 entonces 
+escriba "Este horario  se encuentra disponible"
+fin si
+
+si hora =3 entonces 
+escriba "Este horario ya no se encuentra disponible, por favor elija otro"
+fin si
+
+si hora =4 entonces 
+escriba "Este horario se encuentra disponible"
+fin si
+
+si hora =5 entonces 
+escriba "Este horario se encuentra disponible"
+fin si 
+
+
+fin si 
+
+
+ 
+
+
+
+fin si 
+llamar limpiar_pantalla 
+escriba "Para mejorar tu atencion queremos verificar si eres antiguo o nuevo"
+llamar nueva_linea 
+escriba " 1. paciente nuevo "
+llamar nueva_linea 
+escriba " 2. paciente antiguo " 
+llamar nueva_linea 
+llamar nueva_linea 
+lea veri 
+llamar nueva_linea 
+si veri=1 entonces 
+escriba "Recuerda llevar tus documentos "
+fin si
+llamar nueva_linea 
+llamar nueva_linea 
+si veri=2 entonces 
+escriba "Recuerda llevar tu examenes al control y si tienes algunos exames pendientes procura realizarlos para llevaros el dia de tu cita " 
+fin si 
+
+fin

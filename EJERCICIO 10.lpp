@@ -1,0 +1,18 @@
+entero contador, suma, porce, valor
+inicio
+escriba "Ingrese los valores de las compras realizadas en la tienda de zapatos (minimo 8)"
+contador <- 0
+suma <- 0
+llamar nueva_linea 
+mientras contador < 8 haga
+escriba "Por favor ingrese el valor de la compra"
+lea valor
+llamar nueva_linea 
+contador <- contador + 1
+suma <- valor + suma 
+fin mientras 
+escriba "el total del valor comprado es de ", suma
+llamar nueva_linea 
+porce<- suma *0.25
+escriba "Su ganancia por ventas es de ", porce
+fin 

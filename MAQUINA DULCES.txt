@@ -1,0 +1,312 @@
+Inicio 
+par = 1
+mientras par = 1 entonces
+Mostrar "Bienvenido a la Maquina Expendedora Gargola"
+Mostrar "Las categorías que manejamos son 
+
+         1. Chicles
+         2. Gomitas
+         3. Chupetas 
+         4. Galletas Saladas 
+         5. Galletas Dulces
+
+         Por favor digite el numero de la categoría que desea "
+Lea categoría 
+
+  si categoría = 1 
+  mostrar "Bienvenido a la categoría de chicles"
+  mostrar "Los chicles que tenemos son:
+           
+           1. Trident
+           2. Bubbaloo
+           3. XTime
+      
+           Por favor digite el numero del chicle que desea"
+           lea chicle
+ 
+ si chicle = 1
+ mostrar "El chicle Trident tiene un precio de $300
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 300
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+ si chicle = 2 mostrar "El chicle Bubbaloo tiene un precio de $300
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 300
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+ si chicle = 3
+ mostrar "El chicle XTime tiene un precio de $300
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 300
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+sino 
+
+si categoría = 2
+  mostrar "Bienvenido a la categoría de gomitas"
+  mostrar "Los chicles que tenemos son:
+           
+           1. Trululu
+           2. Grissly
+           3. Trolli
+      
+           Por favor digite el numero de las gomitas que desea"
+           lea gomitas
+ 
+ si gomitas = 1
+ mostrar "Las gomitas Trululu tiene un precio de $200
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 200
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+si gomitas = 2
+ mostrar "Las gomitas Grissly tiene un precio de $200
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 200
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+si gomitas = 3
+ mostrar "Las gomitas Trolli tiene un precio de $200
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 200
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+sino
+ 
+si categoría = 3
+  mostrar "Bienvenido a la categoría de chupetas"
+  mostrar "Los chicles que tenemos son:
+           
+           1. Bon Bon Bum
+           2. Tipitin
+           3. Big Boom 
+      
+           Por favor digite el numero de la chupeta que desea"
+           lea chupeta
+ 
+ si chupeta = 1
+ mostrar "Las chupetas Bon Bon Bum tiene un precio de $500
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 500
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+ 
+ si chupeta = 2
+ mostrar "Las chupetas Tipitin tiene un precio de $300
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 300
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+ si chupeta = 3
+ mostrar "Las chupetas Big Boom tiene un precio de $500
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 300
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+sino 
+
+si categoría = 4
+  mostrar "Bienvenido a la categoría de Galletas Saladas"
+  mostrar "Las Galletas Saladas que tenemos son:
+           
+           1. Club Social
+           2. Saltinas
+           3. Saltin Noel 
+      
+           Por favor digite el numero de las galletas saladas que desea"
+           lea saladas
+ 
+ si saladas = 1
+ mostrar "Las Galletas Saladas Club Social tiene un precio de $1000
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 1000
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+ 
+ si saladas = 2
+ mostrar "Las Galletas Saladas Saltinas tiene un precio de $800
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 800
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+ 
+ si saladas = 3
+ mostrar "Las Galletas Saladas Saltin Noel tiene un precio de $800
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 800
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+sino
+
+si categoría = 5
+  mostrar "Bienvenido a la categoría de Galletas Dulces"
+  mostrar "Las Galletas Dulces que tenemos son:
+           
+           1. Ducales
+           2. Festival
+           3. Dux
+      
+           Por favor digite el numero de las galletas dulces que desea"
+           lea dulces
+ 
+ si dulces = 1
+ mostrar "Las Galletas Dulces Ducales tiene un precio de $1000
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 1000
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+ 
+si dulces = 2
+ mostrar "Las Galletas Dulces Festival tiene un precio de $800
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 800
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+si dulces = 3
+ mostrar "Las Galletas Dulces Dux tiene un precio de $800
+          Por favor ingrese el dinero"
+          lea precio
+          total = precio - 800
+si precio < 0 entonces 
+mostrar "Faltan $", total, " por favor ingréselos"
+sino 
+si precio > 0 entonces
+mostrar "Su cambio es de $", total
+
+fin si
+fin si
+fin si
+
+fin si
+
+mostrar "Gracias por preferirnos"
+mostrar "Si desea realizar otra compra digite 1"
+mostrar "Si desea cerrar el programa digite 2"
+lea par
+
+fin 
+
+ 

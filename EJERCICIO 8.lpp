@@ -1,0 +1,29 @@
+entero consumo, total, total2
+
+inicio 
+
+escriba "Por favor digite el valor de su consumo en la cafeteria"
+
+llamar nueva_linea
+
+escriba "¡IMPORTANTE!, si su compra en la cafeteria es mayor a $100000 entonces obtiene un 5% de descuento"
+
+llamar nueva_linea
+
+ lea consumo 
+ 
+ si consumo > 100000 entonces 
+ 
+ total<- consumo * 0.05
+ total2<- consumo - total
+ 
+ escriba "En el pago total de su compra aplica el 5% de descuento, entonces el valor total a pagar en la cafeteria es de $", total2
+ 
+ sino 
+ 
+ escriba "En el pago total de su compra no aplica el 5% de descuento, entonces el valor total a pagar en la cafeteria es de $", consumo 
+ 
+ fin si
+ 
+ fin
+ 

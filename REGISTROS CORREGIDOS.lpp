@@ -1,0 +1,131 @@
+entero contador, estu, opcion, edad, curso, num
+arreglo[6] de entero cupos
+arreglo[1] de entero disponi
+cadena[15]nombre
+inicio
+Contador <-0
+estu<-0
+cupos [1] <- 0
+cupos [2] <- 0
+cupos [3] <- 0
+cupos [4] <- 0
+cupos [5] <- 0
+cupos [6] <- 0
+disponi [1] <- 6
+
+	mientras contador < 6 haga
+llamar nueva_linea
+llamar nueva_linea 
+llamar nueva_linea 
+escriba "-----------------------------------------------------------------------------------------------------------------------"
+llamar nueva_linea
+escriba "                                                   COLEGIO PICALEkids"
+llamar nueva_linea
+escriba "-----------------------------------------------------------------------------------------------------------------------"
+llamar nueva_linea
+llamar nueva_linea
+llamar nueva_linea 
+llamar nueva_linea
+llamar nueva_linea 
+escriba "  Deseas ver la cantidad de cupos disponibles"
+escriba "                                         Deseas registrar a un estudiante"
+llamar nueva_linea 
+escriba "                Presione 1"
+escriba "                                                                       Presione 2"
+llamar nueva_linea
+escriba ""
+lea opcion 
+
+    si opcion = 1 entonces
+    llamar limpiar_pantalla 
+    llamar nueva_linea
+    llamar nueva_linea 
+    escriba "la cantidad de cupos disponibles son de: ",disponi [1]
+    llamar nueva_linea 
+    llamar nueva_linea 
+    llamar nueva_linea 
+    llamar nueva_linea 
+    llamar nueva_linea
+    llamar nueva_linea 
+    llamar nueva_linea 
+    llamar nueva_linea  
+    llamar nueva_linea 
+    escriba "                                            Volver al inicio "
+    llamar nueva_linea 
+    escriba "                                               Presione 1 "
+    llamar nueva_linea
+    escriba ""
+    lea num 
+    llamar limpiar_pantalla
+    fin si
+    
+    si opcion = 2 entonces 
+		estu <- estu + 1
+		llamar limpiar_pantalla
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba "                                        BIENVENIDO A LA SECCION DE REGISTRO "
+		llamar nueva_linea
+		llamar nueva_linea 
+		escriba "Para los registros tenemos los siguientes cursos disponibles"
+		llamar nueva_linea 
+		llamar nueva_linea 
+		escriba "1"
+		llamar nueva_linea 
+		escriba "2"
+		llamar nueva_linea 
+		escriba "3"
+		llamar nueva_linea 
+		escriba "4"
+		llamar nueva_linea 
+		escriba "5"
+		llamar nueva_linea 
+		escriba "6"
+		llamar nueva_linea
+		llamar nueva_linea 
+		escriba estu,". Por favor digite su nombre completo"
+		llamar nueva_linea
+		escriba ""
+		llamar nueva_linea
+		lea nombre
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba estu,". Digite su edad"
+		llamar nueva_linea
+		escriba ""
+		lea edad
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba estu,". Digite el curso en el que desea registrarse en numeros enteros"
+		llamar nueva_linea
+		escriba ""
+		lea curso 
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba estu,". Digite su tarjeta de identidad"
+		llamar nueva_linea
+		escriba ""
+		lea cupos[estu]
+		
+		contador <- contador + 1
+		
+		
+		Si (cupos[1] = cupos[2]) o (cupos[1] = cupos[3])  o (cupos[1] = cupos[4]) o (cupos[1] = cupos[5]) o (cupos[1] = cupos[6])entonces
+		
+		
+		escriba "Este usuario ya ha sido registrado anteriormente, por lo tanto no se le puede asignar otro cupo"
+		contador <- 6
+		
+		sino
+		
+		escriba "Su registro en el Colegio Picaleñita ha sido realizado con exito"
+		llamar nueva_linea
+		
+		disponi [1] <- disponi [1] - 1
+		llamar limpiar_pantalla
+
+		fin si	
+		fin si
+		fin mientras
+		
+		fin 

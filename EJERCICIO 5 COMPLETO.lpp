@@ -1,0 +1,239 @@
+entero num1, num2,num3, num4, conteo1, conteo2, hombres, mujeres
+cadena [30]genero, genero2, nom1, nom2, nom3, nom4,condicion
+
+inicio
+//seccion de variables definidas
+
+num1<-0
+num2<-0
+num3<-0
+num4<-0
+
+escriba "Bienvenido al almacen de ropa"
+llamar nueva_linea
+llamar nueva_linea
+escriba "en este programa se toman los datos de dos trabajadores del almacen"
+llamar nueva_linea
+llamar nueva_linea
+escriba "digita todas las respuestas en mayuscula sostenida"
+llamar nueva_linea
+llamar nueva_linea
+escriba "cual es su genero M/F"
+llamar nueva_linea
+llamar nueva_linea
+lea genero
+llamar limpiar_pantalla
+//seccion de condicion
+
+	Si genero ="M" entonces
+	
+		llamar nueva_linea
+		escriba "Bien, ahora digita la siguiente informacion"
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba "escriba unicamente su nombre en mayuscula sostenida"
+		llamar nueva_linea
+		llamar nueva_linea
+		lea nom1
+		llamar nueva_linea
+		escriba "La cantidad de ventas que ha realizado al mes"
+		llamar nueva_linea
+		llamar nueva_linea
+		lea num1
+
+llamar nueva_linea
+
+sino
+
+	Si genero = "F" entonces
+		llamar nueva_linea
+		escriba "Bien, ahora digita la siguiente informacion"
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba "escriba unicamente su nombre en mayuscula sostenida"
+		llamar nueva_linea
+		llamar nueva_linea
+		lea nom2	
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba "escriba la cantidad de ventas que ha realizado en el mes"
+		llamar nueva_linea
+		llamar nueva_linea
+		lea num2
+		llamar nueva_linea
+	fin si
+	Fin si
+
+//Fin de programa 1
+
+Escriba "fin de la encuesta"
+llamar nueva_linea
+llamar nueva_linea
+escriba "Desea tomar la informacion de otra persona"
+llamar nueva_linea
+llamar nueva_linea
+escriba "SI/NO"
+llamar nueva_linea
+llamar nueva_linea
+lea condicion
+llamar nueva_linea
+llamar limpiar_pantalla
+//condicion 2
+	si condicion ="SI" entonces
+		
+		llamar nueva_linea
+		escriba "Bienvenido al almacen de ropa"
+		llamar nueva_linea
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba "cual es su genero M/F"
+		llamar nueva_linea
+		llamar nueva_linea
+		lea genero2
+		llamar nueva_linea
+		
+llamar limpiar_pantalla
+
+
+				Si genero2 ="M" entonces
+					
+					llamar nueva_linea
+					escriba "Bien, ahora digita la siguiente informacion"
+					llamar nueva_linea
+					llamar nueva_linea
+					escriba "escriba unicamente su nombre en mayuscula sostenida"
+					llamar nueva_linea
+					llamar nueva_linea
+					lea nom3
+					llamar nueva_linea
+					llamar nueva_linea
+					escriba "La cantidad de ventas que ha realizado al mes"
+					llamar nueva_linea
+					llamar nueva_linea
+					lea num3
+					llamar nueva_linea
+
+				sino
+
+				Si genero2 = "F" entonces
+				
+					llamar nueva_linea
+					escriba "Bien, ahora digita la siguiente informacion"
+					llamar nueva_linea
+					llamar nueva_linea
+					escriba "escriba unicamente su nombre en mayuscula sostenida"
+					llamar nueva_linea
+					llamar nueva_linea
+					lea nom4
+					llamar nueva_linea
+					llamar nueva_linea
+					escriba "escriba la cantidad de ventas que ha realizado en el mes"
+					llamar nueva_linea
+					llamar nueva_linea
+					lea num4
+					llamar nueva_linea
+					
+	Sino
+
+si condicion = "NO" entonces
+	fin si
+	fin si
+fin si
+fin si
+
+//Condicion 3
+
+conteo1 <- 0
+hombres <-0
+mujeres <-0
+
+	si genero= "F" entonces
+	mujeres <- mujeres +1
+	
+	sino
+	
+	si genero= "M" entonces
+	hombres <- hombres +1
+
+	fin si
+	fin si
+	
+
+// condicion 4
+
+conteo2 <-0
+
+		si genero2 = "F" entonces
+		mujeres <- mujeres +1
+		
+		sino
+		
+		si genero2= "M" entonces
+		hombres <- hombres +1
+		
+		fin si
+		fin si
+		
+llamar limpiar_pantalla
+escriba "Datos recoletados:"
+llamar nueva_linea
+llamar nueva_linea
+escriba "Cantidad de mujeres que hay en el establecimiento = ", mujeres
+Llamar nueva_linea
+llamar nueva_linea
+escriba "Cantidad de hombres que hay en el establecimiento = ", hombres
+Llamar nueva_linea
+llamar nueva_linea
+
+//Condicion 4 
+
+conteo1 <-num1+num3
+conteo2 <- num2+num4
+
+		si hombres = 1 entonces	
+			
+			llamar nueva_linea
+			llamar nueva_linea
+			escriba "el porcentaje de hombres que trabaja en el almacen es de 50%"
+			Llamar nueva_linea
+			llamar nueva_linea
+			escriba "las ventas de los hombres fueron ",conteo1
+			llamar nueva_linea
+			llamar nueva_linea
+			sino
+			
+		si hombres = 2 entonces
+			llamar nueva_linea
+			llamar nueva_linea
+			escriba "el porcentaje de hombres que trabaja en el almacen es de 100%"
+			llamar nueva_linea
+			llamar nueva_linea		
+			escriba "las ventas de los hombres fueron ",conteo1
+			llamar nueva_linea
+			llamar nueva_linea
+			fin si
+			fin si
+			
+
+		Si mujeres = 1 entonces
+			llamar nueva_linea
+			llamar nueva_linea
+			escriba "el porcentaje de mujeres que trabaja en el almacen es de 50%"
+			llamar nueva_linea
+			llamar nueva_linea
+			escriba "las ventas de las mujeres fueron ",conteo2
+			llamar nueva_linea
+			sino
+			
+		si mujeres = 2 entonces
+			llamar nueva_linea
+			llamar nueva_linea
+			escriba "el porcentaje de mujeres que trabaja en el almacen es de 100%"
+			llamar nueva_linea
+			llamar nueva_linea
+			escriba "las ventas de las mujeres fueron ",conteo2
+			llamar nueva_linea
+			fin si
+			fin si
+
+fin	

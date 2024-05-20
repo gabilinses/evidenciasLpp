@@ -1,0 +1,12 @@
+entero num
+inicio
+escriba "Por favor digite un numero "
+lea num
+llamar nueva_linea
+llamar nueva_linea 
+si (num mod 2=0) entonces 
+escriba "El numero es par"
+sino 
+escriba "El numero es impar" 
+fin si
+fin 

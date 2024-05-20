@@ -1,0 +1,52 @@
+real soc, metros, result1, result2, result3, result4, result5, result6
+inicio 
+escriba "LIQUIDACION DE FACTURAS DE AGUAS"
+llamar nueva_linea
+escriba "Por favor ingrese los siguientes datos para hallar la liquidacion de sus facturas; Ingrese su estrato socioeconomico"
+lea soc
+escriba "Ahora ingrese los metros cubicos de agua que consumio durante el mes"
+lea metros
+
+si soc = 1 entonces 
+result1 <- 2500 + metros + 5500
+escriba "El valor a pagar de su factura es de $", result1
+
+sino 
+
+si soc = 2 entonces 
+result2 <- 2800 + metros + 6200
+escriba "El valor a pagar de su factura es de $", result2
+
+sino 
+
+si soc = 3 entonces 
+result3 <- 3000 + metros + 7400
+escriba "El valor a pagar de su factura es de $", result3
+
+sino 
+
+si soc = 4 entonces 
+result4 <- 3300 + metros + 8600
+escriba "El valor a pagar de su factura es de $", result4
+
+sino 
+
+si soc = 5 entonces 
+result5 <- 3700 + metros + 9700
+escriba "El valor a pagar de su factura es de $", result5
+
+sino 
+
+si soc = 6 entonces 
+result6 <- 4400 + metros + 11000
+escriba "El valor a pagar de su factura es de $", result6
+
+
+fin si
+ fin si
+  fin si
+   fin si 
+    fin si
+     fin si
+
+fin

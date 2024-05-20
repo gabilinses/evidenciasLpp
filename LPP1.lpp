@@ -1,0 +1,33 @@
+real p1,p2,p3,p4,ptr
+inicio
+escriba "digite la nota de su primer trismestre: "
+lea p1
+llamar nueva_linea
+llamar nueva_linea
+escriba "digite la nota de su segundo trismestre: "
+lea p2
+llamar nueva_linea
+llamar nueva_linea
+escriba "digite la nota de su tercer trismestre: "
+lea p3
+llamar nueva_linea
+llamar nueva_linea
+escriba "digite la nota de su cuarto trismestre: "
+lea p4
+ptr <- p1+p2+p3+p4/4
+si ptr <= 3.0 entonces 
+escriba "Su nota definitiva es INSUFICIENTE"
+sino
+si ptr >= 3.5 entonces 
+escriba "Su nota definitiva es ACEPTABLE"
+sino
+si ptr >= 4.0 entonces 
+escriba "Su nota definitiva es SOBRESALIENTE"
+sino	
+si ptr >= 5.0 entonces 
+escriba "Su nota definitiva es EXCELENTE"
+fin si 
+fin si
+fin si
+fin si
+fin

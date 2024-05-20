@@ -1,0 +1,40 @@
+cadena [20] Manizales, Pereira, Armenia, respuesta
+entero break
+
+inicio
+
+escriba "Escriba una capital de estos tres departamentos del eje cafetero Caldas, Risaralda o Quindio . " 
+llamar nueva_linea
+escriba " (Primera en mayuscula) "
+
+
+break <- 0
+
+Para break <- 0 Hasta 1 Haga
+	
+lea respuesta
+
+si respuesta = ("Manizales") entonces 
+   break <- break+1
+   escriba "Correcto "
+sino
+ si respuesta = ("Pereira") entonces
+ 	escriba "Correcto "
+ 	break <- break+1
+sino
+ si respuesta = ("Armenia") entonces
+	 escriba "Correcto "
+	 break <- break+1
+sino
+ break<- break -1 
+ 
+		fin si
+     fin si
+  fin si
+  
+  
+Fin Para
+	
+	
+	
+fin

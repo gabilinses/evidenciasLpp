@@ -1,0 +1,564 @@
+entero num1,type, librito, num2, suma
+caracter confirmacion
+cadena[25]nombre, decision
+arreglo [2] de entero alumno
+arreglo [3] de cadena [60]novela
+arreglo [3] de cadena [60]ficcion 
+arreglo [3] de cadena [60]negra
+arreglo [3] de cadena [60]literatura
+arreglo [3] de cadena [60]fantasia
+
+inicio
+num2 <- 0
+suma <- 0
+escriba "Bienvenido a la biblioteca en linea libritos"
+llamar nueva_linea
+llamar nueva_linea
+escriba "Desea ver nuestros libros disponibles para prestamos. SI/NO"
+Llamar nueva_linea
+llamar nueva_linea
+lea decision
+
+llamar limpiar_pantalla
+
+si (decision = "Si")o (decision = "si") o (decision = "SI") o (decision = "sI") entonces
+			 
+			 repita
+			 llamar nueva_linea
+			 escriba "Presentamos 5 categorias"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba "escoge el numero de una de las 5 categorias"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 1:Novela Historica"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 2:Ciencia Ficcion"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 3:Novela negra"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 4:Literatura Clasica"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 5:Fantasia Epica"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 lea type
+			 llamar limpiar_pantalla
+			 	
+			 		
+			 		caso type 
+			 				1:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de Novela Historica tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: Los pilares de la Tierra de Ken Follett"
+			 				llamar nueva_linea
+			 				escriba "2: El medico de Noah Gordon"
+			 				llamar nueva_linea
+			 				escriba "3: El codigo Da Vinci de Dan Brown"
+			 				llamar nueva_linea
+			 				
+			 				2:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de Ciencia ficcion tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: El juego de Ender de Orson Scott Card"
+			 				llamar nueva_linea
+			 				escriba "2: Neuromante de William Gibson"
+			 				llamar nueva_linea 
+			 				escriba "3: Dune de Frank Herbert"
+			 				llamar nueva_linea
+			 				
+			 				3:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de Novela negra tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: El silencio de los corderos de Thomas Harris"
+			 				llamar nueva_linea
+			 				escriba "2: El nombre de la rosa de Umberto Eco"
+			 				llamar nueva_linea
+			 				escriba "3: La chica del tren de Paula Hawkins"
+			 				llamar nueva_linea
+			 				
+			 				4:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de la literatura Clasica tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: Orgullo y prejuicio de Jane Austen"
+			 				llamar nueva_linea 
+			 				escriba "2: Crimen y castigo de Fiodor Dostoyevski"
+			 				llamar nueva_linea
+			 				escriba "3: Moby Dick de Herman Melville"
+			 				llamar nueva_linea
+			 				
+			 			
+			 				5:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de la Fantasia Epica tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: El senior de los anillos de J.R.R. Tolkien"
+			 				Llamar nueva_linea
+			 				escriba "2: Juego de tronos de George R.R. Martin"
+			 				llamar nueva_linea
+			 				escriba "3: El nombre del viento de Patrick Rothfuss"
+			 							 				
+			 		fin caso
+	
+		llamar nueva_linea
+		llamar nueva_linea	 		
+		escriba "Desea volver al ver las categorias o seguir con el proceso de solicitud de prestamo"
+		llamar nueva_linea
+		llamar nueva_linea
+		
+		escriba "1: Volver - 2: continuar"
+		llamar nueva_linea
+		llamar nueva_linea
+		lea num1
+		llamar nueva_linea
+		llamar nueva_linea
+		llamar limpiar_pantalla
+		hasta num1 = 2	
+		
+		llamar nueva_linea
+	
+sino		
+fin si
+
+
+
+escriba "Bienvenido a la seccion de solicitud de prestamos"
+llamar nueva_linea
+llamar nueva_linea 
+escriba "Antes de empezar debemos tomar unos datos"
+llamar nueva_linea
+llamar nueva_linea
+escriba "Digite su nombre"
+llamar nueva_linea
+llamar nueva_linea
+lea nombre
+llamar nueva_linea
+llamar nueva_linea
+escriba "Cuantos prestamos de libros con la biblioteca libritos tienes vigentes actualmente"
+llamar nueva_linea
+llamar nueva_linea
+lea alumno[1]
+llamar nueva_linea
+llamar nueva_linea
+escriba "Cuantas Sanciones vigentes tiene actualmente"
+llamar nueva_linea
+llamar nueva_linea
+lea alumno[2]
+llamar nueva_linea
+llamar nueva_linea
+llamar limpiar_pantalla
+llamar nueva_linea
+llamar nueva_linea
+escriba "Gracias por dar su informacion"
+llamar nueva_linea
+llamar nueva_linea
+
+
+// DECISION DE CAPACIDAD DE LIBROS
+	
+		si alumno[1]<3 entonces
+		
+
+		//No realiza ningun proceso//
+	
+	
+	sino
+
+		Si alumno[1]>2 entonces 
+			
+				escriba "Lo sentimos, ", nombre, " alcanzaste el maximo de prestamos permitidos"
+				suma <- num2+1
+				llamar nueva_linea
+				
+		fin si
+		fin si
+		
+//DECISION DE SANCIONES
+
+		Si alumno[2]>0 entonces
+		
+				llamar nueva_linea
+				escriba "Lo sentimos ",nombre,", presentas sanciones"
+				llamar nueva_linea
+				llamar nueva_linea
+				escriba "hasta que no resuelvas sus sanciones pendientes"
+				escriba " el sistema no dejara realizar prestamos"
+				suma <- num2+1
+		
+		sino
+		
+		fin si
+		
+si suma = 0 entonces
+
+
+//PROCESO DE ESCOGER LIBRO
+
+llamar nueva_linea
+escriba "Busca el libro que necesites en las siguientes categorias"
+llamar nueva_linea
+llamar nueva_linea
+llamar nueva_linea
+		 
+//SECCION DE ESCOGER
+
+		
+	      
+			 llamar nueva_linea
+			 escriba "escoge una de las 5 categorias por su numero"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 1:Novela Historica"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 2:Ciencia Ficcion"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 3:Novela negra"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 4:Literatura Clasica"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 escriba " 5:Fantasía Epica"
+			 llamar nueva_linea
+			 llamar nueva_linea
+			 lea type
+			 llamar limpiar_pantalla
+			 	
+			 		
+			 		caso type 
+			 		
+			 				1:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de Novela Historica tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: Los pilares de la Tierra de Ken Follett"
+			 				novela[1]<- "Los pilares de la Tierra de Ken Follett"
+			 				llamar nueva_linea
+			 				escriba "2: El medico de Noah Gordon"
+			 				novela[2]<-"El medico de Noah Gordon"
+			 				llamar nueva_linea
+			 				escriba "3: El codigo Da Vinci de Dan Brown"
+			 				novela[3]<-"El codigo Da Vinci de Dan Brown"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "¿Que libro de esta categoria deseas escoger?"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				lea librito
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+
+
+
+//CONFIRMACION LIBRITO NOVELAS
+			 						caso librito
+			 						
+			 							1: escriba "el libro: ",novela[1],"esta disponible, confirmar prestamo S/N"
+			 							   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 				               llamar nueva_linea
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",novela[1], "confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso
+			 					
+			 							
+			 							2: escriba novela[2]," no se encuentra disponible,"
+			 							   escriba " todas las copias estan prestadas"
+			 							
+			 							3: escriba "El libro: ",novela[3]," esta disponible, confirmar prestamo S/N"
+			 							   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",novela[1], "confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso
+			 					
+			 						fin caso
+		
+			 							
+			 				2:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de Ciencia ficcion tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: El juego de Ender de Orson Scott Card"
+			 				ficcion[1] <-"El juego de Ender de Orson Scott Card"
+			 				llamar nueva_linea
+			 				escriba "2: Neuromante de William Gibson"
+			 				ficcion[2]<-"Neuromante de William Gibson"
+			 				llamar nueva_linea 
+			 				escriba "3: Dune de Frank Herbert"
+			 				ficcion[3]<-"Dune de Frank Herbert"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "¿Que libro de esta categoria deseas escoger?"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				lea librito
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				
+ //CONFIRMACION LIBRITO FICCION
+ 
+			 						caso librito
+			 						
+			 							1: escriba "El libro: ",ficcion[1]," esta disponible, confirmar prestamo S/N"
+			 							   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",ficcion[1]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso
+			 							
+			 							2: escriba "El libro: ",ficcion[2]," no se encuentra disponible,"
+			 							   escriba " todas las copias estan prestadas"
+			 							
+			 							3: escriba "El libro: ",ficcion[3]," no se encuentra disponible,"
+			 							   escriba " todas las copias estan prestadas"
+			 					
+			 						fin caso
+			 	
+			 				3:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de Novela negra tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: El silencio de los corderos de Thomas Harris"
+			 				negra[1]<-"El silencio de los corderos de Thomas Harris"
+			 				llamar nueva_linea
+			 				escriba "2: El nombre de la rosa de Umberto Eco"
+			 				negra[2]<-"El nombre de la rosa de Umberto Eco"
+			 				llamar nueva_linea
+			 				escriba "3: La chica del tren de Paula Hawkins"
+			 				negra[3]<-"La chica del tren de Paula Hawkins"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "¿Que libro de esta categoria deseas escoger?"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				lea librito
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				
+ //CONFIRMACION LIBRITO NOVELA NEGRA
+ 
+			 						caso librito
+			 						
+			 							1: escriba "el libro: ",negra[1]," esta disponible, confirmar prestamo S/N"
+			 							   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",negra[1]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso
+			 							
+			 							2: escriba "el libro: ",negra[2]," esta disponible, confirmar prestamo S/N"
+			 					           llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro ",negra[2]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso		
+			 					
+			 							
+			 							3: escriba "el libro: ", negra[3]," esta disponible, confirmar prestamo S/N"
+			 						       llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro ",negra[3]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso	
+			 						
+			 							
+			 						fin caso //FIN DEL CASO LIBRITOS
+			 				
+			 				4:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de la literatura Clasica tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: Orgullo y prejuicio de Jane Austen"
+			 				literatura[1]<- "Orgullo y prejuicio de Jane Austen"
+			 				llamar nueva_linea 
+			 				escriba "2: Crimen y castigo de Fiodor Dostoyevski"
+			 				literatura[2]<-"Crimen y castigo de Fiodor Dostoyevski"
+			 				llamar nueva_linea
+			 				escriba "3: Moby Dick de Herman Melville"
+			 				literatura[3]<-"Moby Dick de Herman Melville"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "¿Que libro de esta categoria deseas escoger?"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				lea librito
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				
+//CONFIRMACION LIBRITO LITERATURA CLASICA
+ 
+			 						caso librito
+			 						
+			 							1: escriba "el libro: ",literatura[1]," no se encuentra disponible,"
+			 							   escriba " todas las copias estan prestadas"
+			 							
+			 							
+			 							2: escriba "el libro: ",literatura[2]," esta disponible, confirmar prestamo S/N"
+			 						   	   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",literatura[2]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso	
+			 						
+			 							
+			 													
+			 							
+			 							3: escriba literatura[3]," esta disponible, confirmar prestamo S/N"
+			 							   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",literatura[3]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso	
+			 						
+			 							
+			 						fin caso
+			 				
+			 				
+			 			
+			 				5:
+			 				llamar nueva_linea
+			 				escriba "En la categoria de la Fantasia Epica tenemos"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "1: El senior de los anillos de J.R.R. Tolkien"
+			 				fantasia[1]<-"El senior de los anillos de J.R.R. Tolkien"
+			 				Llamar nueva_linea
+			 				escriba "2: Juego de tronos de George R.R. Martin"
+			 				fantasia[2]<-"Juego de tronos de George R.R. Martin"
+			 				llamar nueva_linea
+			 				escriba "3: El nombre del viento de Patrick Rothfuss"
+			 				fantasia[3]<-"El nombre del viento de Patrick Rothfuss"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				escriba "¿Que libro de esta categoria deseas escoger?"
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				lea librito
+			 				llamar nueva_linea
+			 				llamar nueva_linea
+			 				
+//CONFIRMACION LIBRITO FANTASIA
+
+			 						caso librito
+			 						
+			 							1: escriba "el libro: ",fantasia[1]," no se encuentra disponible,"
+			 							   escriba " todas las copias estan prestadas"
+			 							
+			 							
+			 							2: escriba "el libro: ",fantasia[2]," esta disponible, confirmar prestamo S/N"
+			 							   llamar nueva_linea
+			 							   llamar nueva_linea
+			 							   lea confirmacion
+			 							   llamar nueva_linea
+			 				
+			 							
+			 												
+			 												caso confirmacion
+			 												
+			 												's','S': escriba "prestamo del libro: ",fantasia[2]," confirmado. Prestado a ",nombre
+			 												'n','N': escriba "prestamo cancelado con exito"
+			
+			 												fin caso	
+			 						
+			 							
+			 							3: escriba "el libro: ",fantasia[3]," no se encuentra disponible,"
+			 							   escriba " todas las copias estan prestadas"
+			 					
+			 			
+			 				
+			 				
+
+
+			 				
+			 							 				
+			 		fin caso //FIN CASO TYPE
+
+sino:
+fin caso
+fin si
+llamar nueva_linea
+llamar nueva_linea
+escriba "gracias por utilizar la biblioteca libritos online"
+fin

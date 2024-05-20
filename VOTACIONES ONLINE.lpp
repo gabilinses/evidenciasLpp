@@ -1,0 +1,84 @@
+entero contador, num2, candidato
+arreglo[3] de entero numero
+cadena[15]nombre
+inicio
+Contador <-0
+num2<-0
+numero[1] <- 1
+numero[2] <- 2
+numero[3] <- 3
+llamar nueva_linea 
+llamar nueva_linea 
+Escriba "                                  BIENVENIDO AL SISTEMA DE VOTACIONES ONLINE "
+llamar nueva_linea 
+llamar nueva_linea 
+llamar nueva_linea
+		mientras contador < 3 haga
+		num2 <- num2 + 1
+		escriba num2
+		escriba ". Por favor digite su nombre"
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba ""
+		lea nombre
+		llamar nueva_linea
+		llamar nueva_linea
+		escriba  "Por favor digite su cedula de ciudadania "
+		llamar nueva_linea
+		llamar nueva_linea
+		
+		escriba ""
+		llamar nueva_linea
+		lea numero[num2]
+		
+		contador <- contador + 1
+		
+		
+		Si (numero[1] = numero[2]) o (numero[1] = numero[3]) o (numero[3] = numero[2]) entonces
+		
+		llamar nueva_linea 
+		escriba "Usted ya realizo el proceso de votacion anteriormente"
+		contador <-3
+		
+		sino
+		
+		si (numero[3] = numero[2]) entonces
+		llamar nueva_linea 
+		escriba "Usted ya realizo el proceso de votacion anteriormente"
+		contador <-3
+		
+		sino
+		
+	    llamar limpiar_pantalla
+        llamar nueva_linea
+        escriba "Los cantidatos a participar son : "
+        llamar nueva_linea 
+        llamar nueva_linea
+        escriba " 1. Juan Jurado "
+        llamar nueva_linea 
+        escriba " 2. Marta Rengifo "
+        llamar nueva_linea 
+        escriba " 3. Sergio Zapata " 
+        llamar nueva_linea 
+        escriba " 4. Patricia Lopez "
+        llamar nueva_linea 
+        llamar nueva_linea 
+        escriba "Por favor digite el numero asignado del candidato por el que usted desea votar"
+        llamar nueva_linea 
+        escriba ""
+        lea candidato
+        llamar nueva_linea 
+        llamar nueva_linea 
+        escriba "                                                SU VOTO HA SIDO REGISTRADO CON EXITO"
+        llamar limpiar_pantalla
+        llamar nueva_linea
+		fin si
+		fin si	
+		fin mientras
+		
+		
+		
+		
+
+		
+fin

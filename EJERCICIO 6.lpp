@@ -1,0 +1,20 @@
+real def
+inicio 
+escriba "Por favor digite su nota definitiva "
+lea def
+si def <3 entonces 
+escriba "Su nota definitiva es INSUFICIENTE"
+sino
+si def <=3.5 entonces 
+escriba "Su nota definitva es ACEPTABLE"
+sino
+si def <=4 entonces
+escriba "Su nota definitiva es SOBRESALIENTE"
+sino 
+si def <=5 entonces 
+escriba "Su nota definitiva es EXCELENTE"
+fin si
+fin si
+fin si
+fin si
+fin 
